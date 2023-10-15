@@ -1,3 +1,2 @@
 # Bot
-
-The Eon Discord Bot
+I'm sorry skies. truly sorry.
