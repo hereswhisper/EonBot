@@ -1,0 +1,52 @@
+{
+  "name": "eonbot",
+  "version": "1.0.0",
+  "description": "The Eon Discord Bot",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --config nodemon.json src/index.ts",
+    "build": "tsc",
+    "deploy": "cross-env IS_SCRIPT=true NODE_ENV=development ts-node src/scripts/deploy",
+    "deploy:prod": "cross-env IS_SCRIPT=true NODE_ENV=production ts-node src/scripts/deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eonfn/Bot.git"
+  },
+  "keywords": [
+    "DiscordBot",
+    "Discord"
+  ],
+  "author": "Skiesuwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eonfn/Bot/issues"
+  },
+  "homepage": "https://github.com/eonfn/Bot#readme",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.6.2",
+    "@types/node-fetch": "^2.6.5",
+    "@types/uuid": "^9.0.4",
+    "mongoose": "^7.5.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cross-env": "^7.0.3",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^2.6.7"
+  }
+}

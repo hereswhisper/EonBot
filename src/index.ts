@@ -1,0 +1,1 @@
+import("./discord/bot.js");
